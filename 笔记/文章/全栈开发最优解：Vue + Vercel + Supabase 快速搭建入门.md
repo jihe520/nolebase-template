@@ -30,18 +30,20 @@
 
 [新项目 --- New Project (vercel.com)](https://vercel.com/new)
 在里面搜索，选用 vue-vite
-![](Pasted%20image%2020241125164820.png)
+![[Pasted image 20241125164820.png]]
 点击 `deploy` 部署
 选择github：vercel是和github深度绑定的，当进行一次git提交，vercel会自动deploy，非常方便。
 点击创建 create
-![](Pasted%20image%2020241125165024.png)
+![[Pasted image 20241125165024.png]]
+
 
 等待不到20s，就部署完成了。
-![](Pasted%20image%2020241125165252.png)
+![[Pasted image 20241125165252.png]]
+
 网页成功部署起来，非常简单迅速
-![](QQ_1732524813947.png)
+![[QQ_1732524813947.png]]
 在我们的github账号中，会显示该项目
-![](QQ_1732525953103.png)
+![[QQ_1732525953103.png]]
 
 直接将项目clone到本地
 ```shell
@@ -65,23 +67,23 @@ npm install -g pnpm
 
 回到项目面板 dash --> 点击存储 storage -->再点击create database
 vercel已经为我们提供好现成的方案，我们直接在vercel中 **集成**  supabase。（我这里以前配置过，会显示）
-![](QQ_1732524957709.png)
+![[QQ_1732524957709.png]]
 这里我们就选新加坡，网络可能是问题，supabase免费项目只能创建两个，好在开源，后面自己部署也是非常简单。
 
-![](QQ_1732525357415.png)
-![](QQ_1732525473130.png)
+![[QQ_1732525357415.png]]
+![[QQ_1732525473130.png]]
 
 **注意这里的环境变量前缀 prefix，一定要带上使用的框架，`VITE`，不然框架会找不到环境变量的**
 具体其他框架部分，可以直接查看文档，这里是vite。
 
-![](QQ_1732525585871.png)
+
 
 下面界面，就是成功连接上supabase
-
-![](QQ_1732525738365.png)
+![[QQ_1732525585871.png]]
+![[QQ_1732525738365.png]]
 Open in supabase,进入supabase的管理页面
-![](QQ_1732526973745.png)
 
+![[QQ_1732526973745.png]]
 在supabase的SQL Editor中 执行这段 sql 命令
 
 创建一个带id，title等字段的todos表，和规定访问权限，插入些数据。
@@ -202,19 +204,19 @@ npm run dev
 ```
 
 本地，正确渲染
-![](QQ_1732544103464.png)
+![[QQ_1732544103464.png]]
 
 git 提交代码（直接vscode的图形化操作），vercel 会自动部署，非常方便
-![](QQ_1732544299880.png)
+![[QQ_1732544299880.png]]
 
 打开网页就行了
-![](QQ_1732544355277.png)
 
+![[QQ_1732544355277.png]]
 如果你部署失败，错误信息，可以在这查看日志
 一般可能错误：
 - 环境变量
 - 依赖安装
-![](QQ_1732544430101.png)
+![[QQ_1732544430101.png]]
 本项目开源public，已上传 github
 项目地址 ：[jihe520/vite-vue-vercel-supabase-template (github.com)](https://github.com/jihe520/vite-vue-vercel-supabase-template)
 
