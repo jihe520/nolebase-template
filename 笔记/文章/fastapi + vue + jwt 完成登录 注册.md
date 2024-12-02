@@ -11,7 +11,7 @@ backend：fastapi sqlmodel sqlite
 
 # 前端
 
-[vue实现登录获取token并自动刷新token进行JWT认证](vue实现登录获取token并自动刷新token进行JWT认证.md)
+[[vue实现登录获取token并自动刷新token进行JWT认证]]
 
 
 # 后端
